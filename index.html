@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação para Nome de Bebê</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vote no Nome do Bebê!</h1>
+    </header>
+
+    <main>
+        <section id="vote">
+            <h2>Escolha seu nome favorito:</h2>
+            <form id="voteForm">
+                <div class="option">
+                    <input type="radio" id="nameHenri" name="name" value="Henri">
+                    <label for="nameHenri">Henri</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="nameEloa" name="name" value="Eloá">
+                    <label for="nameEloa">Eloá</label>
+                </div>
+                <button type="submit">Votar</button>
+            </form>
+        </section>
+
+        <section id="results">
+            <h2>Resultados da Votação:</h2>
+            <div id="resultsContainer">
+                <div class="result" id="resultHenri">
+                    <h3>Henri</h3>
+                    <div class="bar" id="barHenri"></div>
+                    <span id="votesHenri">0 votos</span>
+                </div>
+                <div class="result" id="resultEloa">
+                    <h3>Eloá</h3>
+                    <div class="bar" id="barEloa"></div>
+                    <span id="votesEloa">0 votos</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
